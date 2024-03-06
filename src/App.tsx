@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import collegeData from './CollegeBasketballTeams.json';
 
+//set the interface
 interface CollegeProps {
   school: string;
   name: string;
@@ -10,17 +11,20 @@ interface CollegeProps {
 }
 const collegeNames = collegeData.teams;
 
+// welcome function: introduces user to website
 function Welcome() {
   return (
     <div>
       <h1>NCAA Basketball Colleges</h1>
-      <h3>
-        With March Madness upon us, we have created a website to list out
+      <h3 className="intro">
+        With March Matdness upon us, we have created a website to list out
         information about all the colleges involved in NCAA Basketball.
       </h3>
     </div>
   );
 }
+
+// render each individual college card based on database
 class College extends React.Component<CollegeProps> {
   render() {
     const oneCollege = this.props;
@@ -35,7 +39,7 @@ class College extends React.Component<CollegeProps> {
     );
   }
 }
-
+// creates the list of all the individual college cards
 function CollegeList() {
   return (
     <div className="college-container">
@@ -45,6 +49,7 @@ function CollegeList() {
     </div>
   );
 }
+// main app function
 function App() {
   return (
     <div className="App">

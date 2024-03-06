@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
+/* set css for the college cards/column layout */
 .college-card {
   border: 1px solid #6f6f6f;
   border-radius: 5px;
@@ -23,4 +24,16 @@ code {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-gap: 10px; */
+}
+
+h1 {
+  background: linear-gradient(45deg, #a104ad, #0b2be0, #329941, #f7f658, #f16412, #e92153, #aa04a7);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  margin: 35px;
+}
+
+.intro {
+  margin: 25px;
 }
