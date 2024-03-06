@@ -25,7 +25,7 @@ class College extends React.Component<CollegeProps> {
   render() {
     const oneCollege = this.props;
     return (
-      <div>
+      <div className="college-card">
         <h2>School: {oneCollege.school}</h2>
         <h3>Mascot: {oneCollege.name}</h3>
         <h3>
@@ -38,7 +38,7 @@ class College extends React.Component<CollegeProps> {
 
 function CollegeList() {
   return (
-    <div>
+    <div className="college-container">
       {collegeNames.map((oneCollege) => (
         <College {...oneCollege} />
       ))}

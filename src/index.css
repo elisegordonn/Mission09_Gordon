@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.college-card {
+  border: 1px solid #6f6f6f;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.college-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-gap: 10px; */
+}
