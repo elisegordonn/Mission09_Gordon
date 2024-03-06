@@ -1,3 +1,5 @@
+// Elise Gordon
+// app to display the NCAA basketball teams
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
